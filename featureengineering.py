@@ -2,9 +2,10 @@ from sklearn import preprocessing
 le = preprocessing.LabelEncoder()
 import pandas as pd
 from datapreprocessing import data_preprocessing
+
 def feature_engineering():
     dataset = data_preprocessing()
-    import pandas as pd
+
     # Convert 'Date' column to datetime
     dataset['date_parsed'] = pd.to_datetime(dataset['Date'], format="%Y-%m-%d")
     

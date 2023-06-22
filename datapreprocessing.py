@@ -1,5 +1,5 @@
 from dataanalysis import data_analysis
-import pandas as pd
+
 def data_preprocessing():
     dataset = data_analysis()
     
